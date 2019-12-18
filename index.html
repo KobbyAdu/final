@@ -1,0 +1,325 @@
+<html>  
+    <h>You SHOULD BE PRACTICING </h> 
+<br>
+    <head>Welcome to my practice reccomendation website</head>   
+        <p>
+            As students of music, practice is the most important thing we have. Yet here you are, struggling to practice.
+            You should always, be practicing, you don't need to study for the SAT, instead you need to study all of your major and minor scales.
+            You don't need to text you girlfriend, but instead you need to train your range WITH YOUR INSTRUMENT. With this guide, I will reccomend 
+            a personalized guide to a 1 hour practice session that will bring you success beyond what you can imagine.
+        </p>
+
+    <head2> MUSIC YOU ARE LEARNING </head2>
+        <p>Take this oppurtunity and tell me about the music you are learning right now</p> 
+        <select name="MUSIC" id="myp">
+            <option value="myp">Classical</option>
+            <option value="myp">Jazz</option>
+            <option value="myp">R&B</option>
+            <option value="myp">Funk</option>
+            <option value="myp">Other</option>
+        </select>
+            
+        
+        <h3>Song's Timesignature</h3>
+        <select name="Time signature?" id="TS">
+            <option value="TS" id = '2/4'>2/4</option>
+            <option value="TS" id = '3/4'>3/4</option>
+            <option value="TS" id = '5/4'>5/4</option>
+            <option value="TS" id = '6/4'>6/4</option>
+            <option value="TS" id = 2/2>2/2</option>
+            <option value="TS" id = '3/2'>3/2</option>
+            <option value="TS" id = '3/8'>3/8</option>
+            <option value="TS" id = '5/8'>5/8</option>
+            <option value="TS" id = '6/8'>6/8</option>
+            <option value="TS" id = '7/8'>7/8</option>
+            <option value="TS" id = '9/8'>9/8</option>
+            <option value="TS" id = '10/8'>10/8</option>
+            <option value="TS" id = '11/8'>11/8</option>
+            <option value="TS" id = '12/8'>12/8</option>
+        </select>
+           
+
+
+
+
+        <h4> The Song's Rhythmic qualities You want to practice</h4>
+          
+
+
+        <label for="Rhythmic Qualities"> Difficult Rhythms In the Song you are learning</label> <br>
+        <input type="checkbox" name="Rhythmic qualities" value="rq" id = 'eight' onclick = "myFunction()">fast 8th note runs (changing notes)<br>
+        <input type="checkbox" name="Rhythmic qualities" value="rq" id = 'sixteen' onclick = "myFunction2()">fast 16th note runs (changing notes)<br>    
+        <input type="checkbox" name="Rhythmic qualities" value="rq" id = 'reapeight' onclick = "myFunction3()">fast 8th notes (repeated note)<br>
+        <input type="checkbox" name="Rhythmic qualities" value="rq" id = 'reapsixteen' onclick = "myFunction4()">fast 16th note (repeated notes)<br>
+        <input type="checkbox" name="Rhythmic qualities" value="rq" id = 'triplets' onclick = "myFunction5()">triplets<br>
+        <input type="checkbox" name="Rhythmic qualities" value="rq" id = 'sync' onclick = "myFunction6()">syncopated Rhythms<br>
+        <input type="checkbox" name="Rhythmic qualities" value="rq" id = 'weird' onclick = "myFunction7()">Weird time signatures<br>
+    
+
+        <h4>What are the songs melodic or harmonic qualities</h4> <br>
+        <input type="checkbox" name="Melodic or Harmonic qualities" value="mq/hq" id = 'high' onclick = "myFunction8()">notes are too high for you to play<br>
+        <input type="checkbox" name="Melodic or Harmonic qualities" value="mq/hq" id = 'low' onclick = "myFunction9()">notes are too low to play with good tone quality<br>
+        <input type="checkbox" name="Melodic or Harmonic qualities" value="mq/hq" id = 'intervals' onclick = "myFunction10()">you are having touble playing the intervals<br>
+        <input type="checkbox" name="Melodic or Harmonic qualities" value="mq/hq" id = 'dynamics' onclick = "myFunction11()">you arent paying attention to dynamics<br>
+        <input type="checkbox" name="Melodic or Harmonic qualities" value="mq/hq" id = 'articu' onclick = "myFunction12()">you aren't articulating everything perfectly<br>
+        <input type="checkbox" name="Melodic or Harmonic qualities" value="mq/hq" id = 'tone' onclick = "myFunction13()">you have poor tone quality<br>
+        <input type="checkbox" name="Melodic or Harmonic qualities" value="mq/hq" id = 'tuning' onclick = "myFunction14()">tuning problems<br>
+        <input type="checkbox" name="Melodic or Harmonic qualities" value="mq/hq" id = 'wrongnotes' onclick = "myFunction15()">You are playing the wrong notes<br> 
+
+
+        <html>
+           
+            
+            <body>
+
+                <script>
+                function myFunction() {
+                  var checkbox = document.getElementById('eight');
+                  var text = document.getElementById("text");
+                  if (checkbox.checked == true){
+                    text.style.display = "block";
+                  } else {
+                     text.style.display = "none";
+                  }
+                }
+                </script>
+             <p id="text" style="display:none">Warm up by practicing scales at a fast tempo. Then practice your excerpt at different tempos, starting at below tempo to eventually 20 bpm above tempo.</p>
+                </body>
+
+
+            
+                <body>
+
+                    <script>
+                    function myFunction2() {
+                      var checkbox = document.getElementById('sixteen');
+                      var text = document.getElementById("text2");
+                      if (checkbox.checked == true){
+                        text.style.display = "block";
+                      } else {
+                         text.style.display = "none";
+                      }
+                    }
+                    </script>
+                 <p id="text2" style="display:none">Turn on a metronome and practice scalse in 16th notes. Then practice your excerpt at below tempo and work up until you are above tempo</p>
+                    </body>
+
+                    <body>
+
+                        <script>
+                        function myFunction3() {
+                          var checkbox = document.getElementById('reapeight');
+                          var text = document.getElementById("text3");
+                          if (checkbox.checked == true){
+                            text.style.display = "block";
+                          } else {
+                             text.style.display = "none";
+                          }
+                        }
+                        </script>
+                        <p id="text3" style="display:none">
+                        Practice single and double tounging eighth notes at a slow tempo. Then increase tempo at 10 bpm a time as you get better.</p>
+                        </body>
+
+                        <body>
+
+                            <script>
+                            function myFunction4() {
+                              var checkbox = document.getElementById('reapsixteen');
+                              var text = document.getElementById("text4");
+                              if (checkbox.checked == true){
+                                text.style.display = "block";
+                              } else {
+                                 text.style.display = "none";
+                              }
+                            }
+                            </script>
+                            <p id="text4" style="display:none">
+                            Practice single, double, an/or triple tounging 16 notes at a slow tempo. Then increase tempo at 10 bpm a time as you get better.</p>
+                            </body>
+
+
+                            <body>
+
+                                <script>
+                                function myFunction5() {
+                                  var checkbox = document.getElementById('triplets');
+                                  var text = document.getElementById("text5");
+                                  if (checkbox.checked == true){
+                                    text.style.display = "block";
+                                  } else {
+                                     text.style.display = "none";
+                                  }
+                                }
+                                </script>
+                                <p id="text5" style="display:none">practice subdiving a quarter not into three parts, then do the same with a half note into three parts and a whole note into three parts.</p>
+                                </body>
+
+                               <body>
+
+                                    <script>
+                                    function myFunction6() {
+                                      var checkbox = document.getElementById('sync');
+                                      var text = document.getElementById("text6");
+                                      if (checkbox.checked == true){
+                                        text.style.display = "block";
+                                      } else {
+                                         text.style.display = "none";
+                                      }
+                                    }
+                                    </script>
+                                    <p id="text6" style="display:none">Get out a pencil and mark the phrase of music you are struggling with rhythmically. Draw lines on notes that fall on the beat get a metronome and practice clapping and counting the syncopated rhythm outloud.</p>
+                                    </body>
+
+
+
+
+<body>
+
+<script>
+function myFunction7() {
+  var checkbox = document.getElementById('weird');
+  var text = document.getElementById("text7");
+  if (checkbox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+<p id="text7" style="display:none">split the count into smaller pieces. for example, if the song is in 7/4, split a measure into a set of three, then  a set of 4 (or vice versa, depends on the song). Use this to get used to the feel of a uneven time signature</p>
+</body>
+
+
+<body>
+
+    <script>
+    function myFunction8() {
+      var checkbox = document.getElementById('high');
+      var text = document.getElementById("text8");
+      if (checkbox.checked == true){
+        text.style.display = "block";
+      } else {
+         text.style.display = "none";
+      }
+    }
+    </script>
+    <p id="text8" style="display:none">TIME FOR SOME RANGE TRAINING. This is a slow and patient process, sometimes it will take weaks to increase your range by one note. The most important thing is practicing so that you have 100% control over the new higher note you are trying to play. This means, you have to practice intervals once you start hiting the higher not you are trying to play. To get there, start by playing chromatically up to your new highest note.</p>
+    </body>
+
+
+    <body>
+
+        <script>
+        function myFunction9() {
+          var checkbox = document.getElementById('low');
+          var text = document.getElementById("text9");
+          if (checkbox.checked == true){
+            text.style.display = "block";
+          } else {
+             text.style.display = "none";
+          }
+        }
+        </script>
+        <p id="text9" style="display:none">play down chromatically to your lowest note. Be sure to support your sound with a lot of air. Get out a tuner to make sure you're playing in tune and you are playing the note you want to play</p>
+        </body>
+
+
+
+        <body>
+
+            <script>
+            function myFunction10() {
+              var checkbox = document.getElementById('intervals');
+              var text = document.getElementById("text10");
+              if (checkbox.checked == true){
+                text.style.display = "block";
+              } else {
+                 text.style.display = "none";
+              }
+            }
+            </script>
+            <p id="text10" style="display:none">You must build up to controlling these intervals. Practicing go up or down between notes starting with a third, then a 5th,6th,7th,8th and so on. GO up or down in steps.</p>
+            </body>
+
+            <body>
+
+                <script>
+                function myFunction11() {
+                  var checkbox = document.getElementById('dynamics');
+                  var text = document.getElementById("text11");
+                  if (checkbox.checked == true){
+                    text.style.display = "block";
+                  } else {
+                     text.style.display = "none";
+                  }
+                }
+                </script>
+                <p id="text11" style="display:none">Mark your music so that you remember to play a certain dynamic, then practice playing that dynamic. In fact, practicing playing quietly is a great way to improve control over your instrument and tone quality </p>
+                </body>
+                <body>
+
+                    <script>
+                    function myFunction12() {
+                      var checkbox = document.getElementById('articu');
+                      var text = document.getElementById("text12");
+                      if (checkbox.checked == true){
+                        text.style.display = "block";
+                      } else {
+                         text.style.display = "none";
+                      }
+                    }
+                    </script>
+                    <p id="text12" style="display:none"> Get a metronome and practice your song under tempo but focusing on the articulation. First start by articulating a measure at a time without changin pitches. Then play the music as written and slowly increase tempo the more consistent you get.  </p>
+                    </body>
+
+                    <body>
+
+                        <script>
+                        function myFunction13() {
+                          var checkbox = document.getElementById('tone');
+                          var text = document.getElementById("text13");
+                          if (checkbox.checked == true){
+                            text.style.display = "block";
+                          } else {
+                             text.style.display = "none";
+                          }
+                        }
+                        </script>
+                        <p id="text13" style="display:none"> LONG TONES ARE ESSENTIAL. Play long tones and try to keep your pitch as steady as possible. Also, practice playing quietly but with a good supportive sound </p>
+                        </body>
+
+
+                        <body>
+
+                            <script>
+                            function myFunction14() {
+                              var checkbox = document.getElementById('tuning');
+                              var text = document.getElementById("text14");
+                              if (checkbox.checked == true){
+                                text.style.display = "block";
+                              } else {
+                                 text.style.display = "none";
+                              }
+                            }
+                            </script>
+                            <p id="text14" style="display:none"> warm up with long tones with a drone. Practice listening and trying to have your sound align with the drone so there aren't any waves. make mental notes about which pitches normally are out of tune for you. </p>
+                            </body>
+
+
+
+                            <body>
+
+                                <script>
+                                function myFunction15() {
+                                  var checkbox = document.getElementById('wrongnotes');
+                                  var text = document.getElementById("text15");
+                                  if (checkbox.checked == true){
+                                    text.style.display = "block";
+                                  } else {
+                                     text.style.display = "none";
+                                  }
+                                }
+                                </script>
+                                <p id="text15" style="display:none"> Get a metronome and practice the song under tempo. </p>
+                                </body>
